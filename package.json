@@ -1,0 +1,18 @@
+{
+  "name": "idea-vault",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "if [ -f tsconfig.json ]; then npx tsc --noEmit; else echo 'No TypeScript config found; skipping typecheck.'; fi",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run typecheck && npm run format:check"
+  },
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "@eslint/js": "^9.32.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.6.2"
+  }
+}
