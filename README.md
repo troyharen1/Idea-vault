@@ -1,18 +1,27 @@
-# Bootstrap
+# Idea Vault
 
-Minimal repository bootstrap for CI, linting, formatting, and contribution hygiene.
+Minimal Node scaffold for the first real app.
 
-## Local run instructions
+## Local run
 
 ```bash
 nvm use
 npm ci
+npm start
+```
+
+## Local verify
+
+```bash
 npm run check
 ```
 
-## Local verify instructions
+## Milestone 1 proposal
 
-- `npm run check` exits with code `0`
-- CI workflow passes on pull requests
+See `docs/MILESTONE_1.md`.
 
-(Placeholder until app code is added.)
+## Current structure
+
+- `src/index.js` — app entry point
+- `src/lib/createAppContext.js` — base runtime context helper
+- `.env.example` — placeholder environment contract

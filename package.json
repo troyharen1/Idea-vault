@@ -2,7 +2,9 @@
   "name": "idea-vault",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
+    "start": "node src/index.js",
     "lint": "eslint .",
     "typecheck": "if [ -f tsconfig.json ]; then npx tsc --noEmit; else echo 'No TypeScript config found; skipping typecheck.'; fi",
     "format": "prettier --write .",
